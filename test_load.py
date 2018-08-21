@@ -86,19 +86,19 @@ db.commit()
 cursor.close()
 db.close()
 
-# 批量insert
-# for t in range(0,100):
-#
-#      sql = 'insert into tb5 (id, val) values '
-#
-#      for i in range(1,100000):
-#             sql += ' ('+`t*100000+i`+', "tb5EXTRA"),'
-#      sql += ' ('+`t`+'00000, "tb5EXTRA")'
-#
-#      cur.execute(sql)
-#
-#      db.commit()
-#
-#  cur.close()
-#
-#  db.close()
+批量insert
+for t in range(0,100):
+
+     sql = 'insert into tb5 (id, val) values '
+
+     for i in range(1,100000):
+            sql += ' ('+`t*100000+i`+', "tb5EXTRA"),'
+     sql += ' ('+`t`+'00000, "tb5EXTRA")'
+
+     cur.execute(sql)
+
+     db.commit()
+
+ cur.close()
+
+ db.close()
